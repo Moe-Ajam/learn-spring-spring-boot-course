@@ -8,12 +8,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
 
 @Component
 class SomeClass {
 
-    private SomeDependency someDependency;
+    private final SomeDependency someDependency;
 
     @Autowired
     public SomeClass(SomeDependency someDependency) {
@@ -48,8 +47,11 @@ public class PrePostAnnotationsLauncherApplication {
     public static void main(String[] args) {
 
 
-        try (var context = new AnnotationConfigApplicationContext(PrePostAnnotationsLauncherApplication.class)) {
+        var context = new AnnotationConfigApplicationContext(PrePostAnnotationsLauncherApplication.class);
+        try {
 
+        } finally {
+            context.close();
         }
     }
 }

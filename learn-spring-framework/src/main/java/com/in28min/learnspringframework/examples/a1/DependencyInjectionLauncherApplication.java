@@ -1,7 +1,5 @@
 package com.in28min.learnspringframework.examples.a1;
 
-import com.in28min.learnspringframework.game.GameRunner;
-import com.in28min.learnspringframework.game.GamingConsole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;

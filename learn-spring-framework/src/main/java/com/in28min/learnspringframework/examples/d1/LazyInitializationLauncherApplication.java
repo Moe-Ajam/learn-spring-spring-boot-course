@@ -1,5 +1,6 @@
 package com.in28min.learnspringframework.examples.d1;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +19,7 @@ class ClassA {
 class ClassB {
 
     private ClassA classA;
+    @Autowired
     public ClassB(ClassA classA){
         System.out.println("Some initialization logic");
         this.classA = classA;

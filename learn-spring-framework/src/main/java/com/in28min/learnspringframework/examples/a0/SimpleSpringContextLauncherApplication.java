@@ -1,6 +1,5 @@
 package com.in28min.learnspringframework.examples.a0;
 
-import com.in28min.learnspringframework.examples.exercise01.BusinessCalculationService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

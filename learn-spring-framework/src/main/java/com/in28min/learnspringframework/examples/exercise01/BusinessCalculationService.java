@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 @Component
 public class BusinessCalculationService {
-    private DataService dataService;
+    private final DataService dataService;
 
     public BusinessCalculationService(DataService dataService) {
         this.dataService = dataService;
